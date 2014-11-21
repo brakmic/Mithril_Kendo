@@ -45,7 +45,8 @@
                     }
                 });
 
-                //initialize the detail grid
+                //initialize the detail grid (the details will be separately received by an extra call. Of course, we could do it via Mithrils
+                //m.request method too.)
                 grid.kendoGrid({
                     dataSource: {
                         type: 'json',
