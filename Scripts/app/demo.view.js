@@ -13,7 +13,7 @@
                 console.log("Selected: " + selected.length + " item(s), [" + selected.join(", ") + "]");
             }
         }
-        //here we do some extra processing for each customer order-details view (the template is in _Home.cshtml)
+        //here we do some extra processing for each customer order-details view (the template is in Views/Home/_Home.cshtml)
         function detailInit(e) {
             if (e) {
                 console.log('customerId: ' + e.data.id);
