@@ -5,7 +5,7 @@ This is a demo webapp that combines Mithril with Kendo UI.
 
 * Mithril:   <a href="http://lhorie.github.io/mithril" target="_blank">Github Homepage</a>
 * Kendo UI: <a href="http://www.telerik.com/kendo-ui1" target="_blank">Telerik Homepage</a>
-* Northwind Service: <a href="http://services.odata.org/Northwind/Northwind.svc" target="_blank">Service URL (xml)</a>
+* Northwind Service: <a href="http://services.odata.org/Northwind/Northwind.svc/?$format=json" target="_blank">Service JSON</a>
 
 Please note that Kendo Grid belongs to the "Professional" version of Kendo UI and therefore needs a proper license to be used.
 Therefore *I'm not providing the copyrighted scripts/styles to avoid violation of Telerik's license terms*.
