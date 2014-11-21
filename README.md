@@ -1,8 +1,28 @@
 Mithril & Kendo 
 ===============
+
+This is a demo webapp that combines Mithril with Kendo UI.
+
+* Mithil:   <a href="http://lhorie.github.io/mithril">Github Homepage</a>
+* Kendo UI: <a href="http://www.telerik.com/kendo-ui1">Telerik Homepage</a>
+* Northwind Service: <a href="http://services.odata.org/Northwind/Northwind.svc">Service URL (xml)</a>
+
+The backend service is the classic "Northwind" public service from Microsoft:  
+
 Please, not that Kendo Grid belongs to the "Professional" version of Kendo UI and needs a proper license.
 
 There's also 30 day trial available: <a href="http://www.telerik.com/download/kendo-ui">Kendo UI Trial License</a>
+
+The Kendo-Scripts should go to *Scripts/kendo* directory and CSS-files to *Content/kendo*.
+Or adjust the Bundles in *App_Start/BundleConfig.js*
+
+This app served me to test Mithril's capabilities and how to combine it with some other frameworks.
+The app itself is actually a "no-brainer" and the most complex part is actually the configuration of the Kendo-Grid.
+
+Nevertheless, I tried to make this demo app somewhat "realistic" and added not only one grid-template but also a nested template for detail grid-views. 
+Using nestend templates in Kendo UI is rather problematic because you can't simply select elements by their "ids". More info on this peculiarity <a href="http://blog.falafel.com/nested-templates-kendo-ui/">here</a>.
+
+![Kendo Grid](http://f33.imgup.net/mithril8f2b.png "KendoGrid")
 
 **License**
 ---------
