@@ -26,7 +26,7 @@
                 url: 'http://services.odata.org/Northwind/Northwind.svc/Customers?$format=json',
             });
     };
-
+    
     //init the view model
     app.vm = {};
     app.vm.init = function () {
