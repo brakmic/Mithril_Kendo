@@ -249,7 +249,7 @@
     //
     //One alternative to writing pure JavaScript templates could be the port of React's JSX called MSX: https://github.com/insin/msx
     //*******************************************************************************************************************************
-    //In "initKendoGrid" we process everything we need to manipulate the grid-structure which relies on classes that do not belong to Mithril
+    //In "initKendoGrid" we process everything we need to manipulate the grid-structure that relies on classes that do not belong to Mithril
     //Kendo Grid knows nothing about Mithril and vice-versa and therefore we need some extra functionality to process templates, detail vies etc.
     //More info regarding the property "config" here: http://lhorie.github.io/mithril/mithril.html#persisting-config-data
     app.view = function () {
