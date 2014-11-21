@@ -23,6 +23,13 @@ The app itself is a "no-brainer" and the most complex part actually is the confi
 Nevertheless, I tried to make this demo app somewhat "realistic" and added not only one grid-template but also a nested template for detail grid-views. 
 Using nestend templates in Kendo UI is rather problematic because you can't simply select elements by their "ids". More info on this peculiarity <a href="http://blog.falafel.com/nested-templates-kendo-ui/">here</a>.
 
+Regarding Mithril framework I can only say: **It's a great little tool!** The emphasis is on **great** :)
+
+But I'm still not sure if the Mithril components in this app are *correct* of following certain guideline. I discovered Mithril just a few days ago.
+So, if you find any problematic parts, please let me know.
+
+This is the Grid in all it's glory.
+
 ![Kendo Grid](http://f33.imgup.net/mithril8f2b.png "KendoGrid")
 
 **License**
