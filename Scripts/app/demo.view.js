@@ -249,7 +249,7 @@
     //
     //One alternative to writing pure JavaScript templates could be 
     //the port of React's JSX called MSX: https://github.com/insin/msx
-    //*******************************************************************************************************************************
+    //****************************************************************************************
     //In "initKendoGrid" we process everything we need to manipulate the grid-structure 
     //that relies on classes that do not belong to Mithril.
     //Kendo Grid knows nothing about Mithril and vice-versa and therefore we need some 
