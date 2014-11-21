@@ -18,7 +18,7 @@ The Kendo-Scripts should go to *Scripts/kendo* directory and CSS-files to *Conte
 Or adjust the Bundles in *App_Start/BundleConfig.js*
 
 This app served me to test Mithril's capabilities and how to combine it with some other frameworks.
-The app itself is a "no-brainer" and the most complex part is actually the configuration of the Kendo-Grid.
+The app itself is a "no-brainer" and the most complex part is actually the configuration of the Kendo-Grid in *Scripts/app/demo.view.js*.
 
 Nevertheless, I tried to make this demo app somewhat "realistic" and added not only one grid-template but also a nested template for detail grid-views. 
 Using nestend templates in Kendo UI is rather problematic because you can't simply select elements by their "ids". More info on this peculiarity <a href="http://blog.falafel.com/nested-templates-kendo-ui/">here</a>.
