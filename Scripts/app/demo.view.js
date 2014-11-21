@@ -4,6 +4,7 @@
     //create a new element and its sub-elements (detail-grids, listviews etc.)
     function initKendoGrid(element, isInitialized, context) {
         if (isInitialized) return; //do this only once
+
         //show info about the selected row (this snippet was taken from the Kendo Grid demo page http://demos.telerik.com/kendo-ui/grid/index)
         function onChange(arg) {
             var selected = $.map(this.select(), function (item) {
