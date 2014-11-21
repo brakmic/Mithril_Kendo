@@ -141,7 +141,7 @@
                 //                              }
                 //                      }
                 //           }
-                pageSize: 10,
+                pageSize: 5,
                 serverPaging: false,
                 serverSorting: false,
                 schema: {
