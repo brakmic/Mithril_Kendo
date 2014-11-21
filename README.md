@@ -21,7 +21,7 @@ This app served me to test Mithril's capabilities and how to combine it with som
 The app itself is a "no-brainer" and the most complex part actually is the configuration of the Kendo-Grid in *Scripts/app/demo.view.js*.
 
 Nevertheless, I tried to make this demo app somewhat "realistic" and added not only one grid-template but also a nested template for detail grid-views. 
-Using nestend templates in Kendo UI is rather problematic because you can't simply select elements by their "ids". More info on this peculiarity <a href="http://blog.falafel.com/nested-templates-kendo-ui/" target="_blank">here</a>.
+Using nested templates in Kendo UI is rather problematic because you can't simply select elements by their "ids". More info on this peculiarity <a href="http://blog.falafel.com/nested-templates-kendo-ui/" target="_blank">here</a>.
 
 Regarding Mithril framework I can only say: **It's a great little tool!** The emphasis is on **great** :)
 
