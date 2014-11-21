@@ -12,7 +12,7 @@ Therefore *I'm not providing the copyrighted scripts/styles to avoid violation o
 
 But there's a 30 day trial available: <a href="http://www.telerik.com/download/kendo-ui" target="_blank">Kendo UI Trial License</a>
 
-The Kendo-Scripts should go to *Scripts/kendo* directory and CSS-files to *Content/kendo*.
+The Kendo-Scripts should go into *Scripts/kendo* directory and CSS-files into *Content/kendo*.
 Or adjust the Bundles in *App_Start/BundleConfig.js*
 
 This app served me to test Mithril's capabilities and how to combine it with some other frameworks.
