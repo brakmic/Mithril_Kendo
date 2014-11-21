@@ -25,7 +25,9 @@ Using nestend templates in Kendo UI is rather problematic because you can't simp
 
 Regarding Mithril framework I can only say: **It's a great little tool!** The emphasis is on **great** :)
 
-But I'm still not sure if the Mithril components in this app are *correct* of following certain guideline. I discovered Mithril just a few days ago.
+But I'm still not sure if the Mithril components in this app are *correct* and completely following certain guidelines. 
+
+I discovered Mithril just a few days ago.
 So, if you find any problematic parts, please let me know.
 
 This is the Grid in all it's glory.
