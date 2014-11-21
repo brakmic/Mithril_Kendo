@@ -9,7 +9,7 @@ This is a demo webapp that combines Mithril with Kendo UI.
 
 The backend service is the classic "Northwind" public service from Microsoft:  
 
-Please, not that Kendo Grid belongs to the "Professional" version of Kendo UI and needs a proper license.
+Please note that Kendo Grid belongs to the "Professional" version of Kendo UI and needs a proper license.
 
 There's also 30 day trial available: <a href="http://www.telerik.com/download/kendo-ui">Kendo UI Trial License</a>
 
