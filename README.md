@@ -12,7 +12,7 @@ The backend service is the classic "Northwind" public service from Microsoft:
 Please note that Kendo Grid belongs to the "Professional" version of Kendo UI and therefore needs a proper license to be used.
 Therefore I'm not providing the needed scripts/styles to avoid violation of Telerik's license terms.
 
-There's also 30 day trial available: <a href="http://www.telerik.com/download/kendo-ui">Kendo UI Trial License</a>
+But there's a 30 day trial available: <a href="http://www.telerik.com/download/kendo-ui">Kendo UI Trial License</a>
 
 The Kendo-Scripts should go to *Scripts/kendo* directory and CSS-files to *Content/kendo*.
 Or adjust the Bundles in *App_Start/BundleConfig.js*
