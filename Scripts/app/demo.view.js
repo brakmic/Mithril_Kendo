@@ -22,8 +22,10 @@
                     tabStrip = $('.mithril-tabstrip:not(.modified)'), 
                     grid = $('.mithril-detail-grid:not(.modified)'), 
                     listView = $('.mithril-customer-address:not(.modified)'); 
-                //To prevent "updating" of already processed detail-grids we add the class "modified" to every detail-grid, tabStrip & listView widget.
-                //Without this setting the current widgets would overwrite all others because we can only select "classes" and not "ids". 
+                //To prevent "updating" of already processed detail-grids we add the class "modified" to every detail-grid, 
+                //tabStrip & listView widget.
+                //Without this setting the current widgets would overwrite all others because we can only 
+                //select "classes" and not "ids". 
                 //More info on this problem here: http://blog.falafel.com/nested-templates-kendo-ui/
                 grid.addClass('modified');
                 tabStrip.addClass('modified');
