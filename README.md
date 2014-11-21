@@ -3,16 +3,16 @@ Mithril & Kendo
 
 This is a demo webapp that combines Mithril with Kendo UI.
 
-* Mithil:   <a href="http://lhorie.github.io/mithril">Github Homepage</a>
-* Kendo UI: <a href="http://www.telerik.com/kendo-ui1">Telerik Homepage</a>
-* Northwind Service: <a href="http://services.odata.org/Northwind/Northwind.svc">Service URL (xml)</a>
+* Mithil:   <a href="http://lhorie.github.io/mithril" target="_blank">Github Homepage</a>
+* Kendo UI: <a href="http://www.telerik.com/kendo-ui1" target="_blank">Telerik Homepage</a>
+* Northwind Service: <a href="http://services.odata.org/Northwind/Northwind.svc" target="_blank">Service URL (xml)</a>
 
 The backend service is the classic "Northwind" public service from Microsoft:  
 
 Please note that Kendo Grid belongs to the "Professional" version of Kendo UI and therefore needs a proper license to be used.
 Therefore I'm not providing the needed scripts/styles to avoid violation of Telerik's license terms.
 
-But there's a 30 day trial available: <a href="http://www.telerik.com/download/kendo-ui">Kendo UI Trial License</a>
+But there's a 30 day trial available: <a href="http://www.telerik.com/download/kendo-ui" target="_blank">Kendo UI Trial License</a>
 
 The Kendo-Scripts should go to *Scripts/kendo* directory and CSS-files to *Content/kendo*.
 Or adjust the Bundles in *App_Start/BundleConfig.js*
