@@ -52,7 +52,7 @@
         this.firebase = new app.Firebase();
         fireAuth(this.firebase,'USER-EMAIL', 'PASSWORD');
         //to retrieve JSON data directly from Firebase DB add '.json' to the URL like in the example below
-        //more info on filtering data here: https://www.firebase.com/docs/web/guide/retrieving-data.html#section-queries
+        //more info on filtering here: https://www.firebase.com/docs/web/guide/retrieving-data.html#section-queries
         this.firebaseJsonUrl = app.FIREBASE_URL + '/.json?limitToFirst=10&orderBy=%22$key%22';
     };
 
