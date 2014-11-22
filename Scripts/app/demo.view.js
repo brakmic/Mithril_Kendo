@@ -64,18 +64,18 @@
                                 id: 'customerId',
                                 fields: {
                                     customerId: { editable: false, nullable: false },
-                                    productName: { editable: false, nullable: false },
-                                    orderDate: { editable: true, nullable: false },
-                                    requiredDate: { editable: true, nullable: true },
-                                    shippedDate: { editable: true, nullable: true },
-                                    shipVia: { editable: true, nullable: true },
-                                    freight: { editable: true, nullable: true },
-                                    shipName: { editable: true, nullable: true },
-                                    shipAddress: { editable: true, nullable: true },
-                                    shipCity: { editable: true, nullable: true },
-                                    shipRegion: { editable: true, nullable: true },
-                                    shipPostalCode: { editable: true, nullable: true },
-                                    shipCountry: { editable: true, nullable: true }
+                                    productName: { editable: false, nullable: false, type: 'string' },
+                                    orderDate: { editable: true, nullable: false, type: 'string' },
+                                    requiredDate: { editable: true, nullable: false, type: 'string' },
+                                    shippedDate: { editable: true, nullable: true, type: 'string' },
+                                    shipVia: { editable: true, nullable: true, type: 'string' },
+                                    freight: { editable: true, nullable: true, type: 'string' },
+                                    shipName: { editable: true, nullable: true, type: 'string' },
+                                    shipAddress: { editable: true, nullable: true, type: 'string' },
+                                    shipCity: { editable: true, nullable: true, type: 'string' },
+                                    shipRegion: { editable: true, nullable: true, type: 'string' },
+                                    shipPostalCode: { editable: true, nullable: true, type: 'string' },
+                                    shipCountry: { editable: true, nullable: true, type: 'string' }
                                 }
                             },
                             parse: function (response) {
@@ -148,11 +148,12 @@
                     model: { //this will be the model for the grid
                         id: 'id',
                         fields: {
-                            name: { editable: false, nullable: false },
-                            company: { editable: false, nullable: false },
-                            address: { editable: false, nullable: false },
-                            city: { editable: true, nullable: true },
-                            postalCode: { editable: true, nullable: true },
+                            id: { editable: false, nullable: false },
+                            name: { editable: false, nullable: true, type: 'string' },
+                            company: { editable: false, nullable: true, type: 'string' },
+                            address: { editable: false, nullable: true, type: 'string' },
+                            city: { editable: true, nullable: true, type: 'string' },
+                            postalCode: { editable: true, nullable: true, type: 'string' },
                             country: { editable: false, nullable: true, type: 'string' },
                             phone: { editable: true, nullable: true, type: 'string' },
                         }
