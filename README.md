@@ -24,7 +24,7 @@ The app itself is a "no-brainer" and the most complex part actually is the confi
 Nevertheless, I tried to make this demo app somewhat "realistic" and added not only one grid-template but also a nested template for detail grid-views. 
 Using nested templates in Kendo UI is rather problematic because you can't simply select elements by their "ids". More info on this peculiarity <a href="http://blog.falafel.com/nested-templates-kendo-ui/" target="_blank">here</a>.
 
-This demo also contains support retrieval of JSON-data from Firebase. But a valid Firebase account is needed which can be set up for free. 
+This demo also supports retrieval of JSON-data from Firebase. But a valid Firebase account is needed which can be set up for free. 
 Look into *demo.model.js* for more information.
 
 Regarding the Mithril framework I can only say: **It's a great little tool!** The emphasis is on **great** :)
