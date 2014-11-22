@@ -1,7 +1,21 @@
 ﻿(function (global, m) {
 
-    var app = global.app = global.app || {};
-
+    var app = global.app = global.app || {},
+        FIREBASE_URL = 'YOUR_FIREBASE_SERVER_URL',
+        //authenticate Firebase services
+        fireAuth = function (fire) {
+            fire.authWithPassword({
+                email: "USER-EMAIL",
+                password: "PASSWORD"
+            }, function (error, authData) {
+                if (error === null) {
+                    // user authenticated with Firebase
+                    console.log("User ID: " + authData.uid + ", Provider: " + authData.provider);
+                } else {
+                    console.log("Error authenticating user: ", error);
+                }
+            });
+        };
     //Here we use Mithrils "request" method to connect the Service and get the data.
     //Optionally we could predefine a "model class" and let Mithril process data according to its properties.
     //For example:
@@ -26,11 +40,20 @@
                 url: 'http://services.odata.org/Northwind/Northwind.svc/Customers?$format=json',
             });
     };
+
+    app.Firebase = function (user, password) {
+        return new Firebase(app.FIREBASE_URL);
+    };
     
     //init the view model
     app.vm = {};
     app.vm.init = function () {
         this.customers = new app.Customers();
+        this.firebase = new app.Firebase();
+        fireAuth(this.firebase);
+        //to retrieve JSON data directly from Firebase DB add '.json'
+        //more info on filtering data here: https://www.firebase.com/docs/web/guide/retrieving-data.html#section-queries
+        this.firebaseJsonUrl = app.FIREBASE_URL + '/.json?limitToFirst=10&orderBy=%22$key%22';
     };
 
 }(window, Mithril));

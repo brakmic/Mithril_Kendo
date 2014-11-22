@@ -22,6 +22,8 @@ namespace Mithril_Kendo_WebApp
             //KendoUI Professional (http://www.telerik.com/kendo-ui1)
             bundles.Add(new ScriptBundle("~/bundles/kendo").Include(
                 "~/Scripts/kendo/kendo.all.min.js"));
+            bundles.Add(new ScriptBundle("~/bundles/firebase").Include(
+                "~/Scripts/firebase.js"));
             //demo app scripts
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
                 "~/Scripts/app/demo.controller.js",
