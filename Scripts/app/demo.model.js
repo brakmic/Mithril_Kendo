@@ -3,10 +3,10 @@
     var app = global.app = global.app || {},
         FIREBASE_URL = 'YOUR_FIREBASE_SERVER_URL',
         //authenticate Firebase services
-        fireAuth = function (fire) {
+        fireAuth = function (fire, user, pwd) {
             fire.authWithPassword({
-                email: "USER-EMAIL",
-                password: "PASSWORD"
+                email: user,
+                password: pwd
             }, function (error, authData) {
                 if (error === null) {
                     // user authenticated with Firebase
@@ -41,7 +41,7 @@
             });
     };
 
-    app.Firebase = function (user, password) {
+    app.Firebase = function () {
         return new Firebase(app.FIREBASE_URL);
     };
     
@@ -50,8 +50,8 @@
     app.vm.init = function () {
         this.customers = new app.Customers();
         this.firebase = new app.Firebase();
-        fireAuth(this.firebase);
-        //to retrieve JSON data directly from Firebase DB add '.json'
+        fireAuth(this.firebase,'USER-EMAIL', 'PASSWORD');
+        //to retrieve JSON data directly from Firebase DB add '.json' to the URL like in the example below
         //more info on filtering data here: https://www.firebase.com/docs/web/guide/retrieving-data.html#section-queries
         this.firebaseJsonUrl = app.FIREBASE_URL + '/.json?limitToFirst=10&orderBy=%22$key%22';
     };

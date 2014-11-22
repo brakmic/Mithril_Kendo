@@ -1,10 +1,11 @@
 Mithril & Kendo 
 ===============
 
-This is a demo webapp that combines Mithril with Kendo UI.
+This is a demo webapp that combines Mithril, Kendo UI, ASP.NET & Firebase.
 
 * Mithril:   <a href="http://lhorie.github.io/mithril" target="_blank">Github Homepage</a>
 * Kendo UI: <a href="http://www.telerik.com/kendo-ui1" target="_blank">Telerik Homepage</a>
+* Firebase: <a href="https://www.firebase.com" target="_blank">Firebase</a>
 * Northwind Service: <a href="http://services.odata.org/Northwind/Northwind.svc/?$format=json" target="_blank">Service JSON</a>
 
 Please note that Kendo Grid belongs to the "Professional" version of Kendo UI and therefore needs a proper license to be used.
@@ -22,6 +23,9 @@ The app itself is a "no-brainer" and the most complex part actually is the confi
 
 Nevertheless, I tried to make this demo app somewhat "realistic" and added not only one grid-template but also a nested template for detail grid-views. 
 Using nested templates in Kendo UI is rather problematic because you can't simply select elements by their "ids". More info on this peculiarity <a href="http://blog.falafel.com/nested-templates-kendo-ui/" target="_blank">here</a>.
+
+This demo also contains support retrieval of JSON-data from Firebase. But a valid Firebase account is needed which can be set up for free. 
+Look into *demo.model.js* for more information.
 
 Regarding the Mithril framework I can only say: **It's a great little tool!** The emphasis is on **great** :)
 
