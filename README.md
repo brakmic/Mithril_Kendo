@@ -41,8 +41,7 @@ So, if you find any problematic parts, please let me know.
 
 **Firebase**
 
-The current Firebase integration shows a simple "three-way" data-binding between the view, the model and the 
-actual database hosted at Firebase.com. If you change the value on Firebase, for example by sending a POST request
+The current Firebase integration shows a simple "three-way" data-binding between the view, the model and the database hosted at Firebase.com. If you change the value on Firebase, for example by sending a POST request
 via curl, a respective event "child_added" will be fired and the app will change the value of "Message from Firebase".
 
 Here's an example cURL call for Windows (usually, on Linux you don't have to fiddle around with "echo" because there are no problems
