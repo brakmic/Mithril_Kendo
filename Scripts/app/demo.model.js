@@ -42,7 +42,7 @@
     };
 
     app.Firebase = function () {
-        return new Firebase(app.FIREBASE_URL);
+        return new Firebase(FIREBASE_URL);
     };
     
     //init the view model
@@ -53,7 +53,7 @@
         fireAuth(this.firebase,'USER-EMAIL', 'PASSWORD');
         //to retrieve JSON data directly from Firebase DB add '.json' to the URL like in the example below
         //more info on filtering here: https://www.firebase.com/docs/web/guide/retrieving-data.html#section-queries
-        this.firebaseJsonUrl = app.FIREBASE_URL + '/.json?limitToFirst=10&orderBy=%22$key%22';
+        this.firebaseJsonUrl = FIREBASE_URL + '/.json?limitToFirst=10&orderBy=%22$key%22';
     };
 
 }(window, Mithril));
