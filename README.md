@@ -51,9 +51,6 @@ Here I'm sending a POST message to my Firebase-server to store it under the /mes
 
     echo {"id":"1","user":"Harris","msg":"Hello World!"} | curl https://YOUR_FIREBASE_SERVER_ADDRESS/messages.json -H 'Accept: application/json' -H 'Content-Type: application/json' -d @-
 
-
-Example
-
 <img src="http://f20.imgup.net/firebase10c1.png" style="border:1px solid"/>
 
 
