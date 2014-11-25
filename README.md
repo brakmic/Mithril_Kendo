@@ -34,9 +34,31 @@ But I'm still not sure if the Mithril components in this app are *correct* and c
 I discovered Mithril just a few days ago.
 So, if you find any problematic parts, please let me know.
 
-This is the Grid in all it's glory.
+
+***This is the Kendo Grid with some Northwind Test-Data.***
 
 ![Kendo Grid](http://f33.imgup.net/mithril8f2b.png "KendoGrid")
+
+**Firebase**
+
+The current Firebase integration shows a simple "three-way" data-binding between the view, the model and the 
+actual database hosted at Firebase.com. If you change the value on Firebase, for example by sending a POST request
+via curl, a respective event "child_added" will be fired and the app will change the value of "Message from Firebase".
+
+Here's an example cURL call for Windows (usually, on Linux you don't have to fiddle around with "echo" because there are no problems
+with proper formatting of '' and ""):
+
+Here I'm sending a POST message to my Firebase-server to store it under the /messages-path.
+
+    echo {"id":"1","user":"Harris","msg":"Hello World!"} | curl https://YOUR_FIREBASE_SERVER_ADDRESS/messages.json -H 'Accept: application/json' -H 'Content-Type: application/json' -d @-
+
+
+Example
+
+<img src="http://f20.imgup.net/firebase10c1.png" style="border:1px solid"/>
+
+
+More info on data handling, persisting and retrieval: <a href="https://www.firebase.com/docs/web/guide/setup.html">Firebase Guide</a>
 
 **License**
 ---------

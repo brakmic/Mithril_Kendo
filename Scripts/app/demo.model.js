@@ -1,7 +1,7 @@
 ﻿(function (global, m) {
 
     var app = global.app = global.app || {},
-        FIREBASE_URL = 'YOUR_FIREBASE_SERVER_URL',
+        FIREBASE_URL = 'YOUR_FIREBASE_SERVER',
         //authenticate Firebase services
         fireAuth = function (fire, user, pwd) {
             fire.authWithPassword({
@@ -42,18 +42,48 @@
     };
 
     app.Firebase = function () {
-        return new Firebase(app.FIREBASE_URL);
+        return new Firebase(FIREBASE_URL);
     };
     
-    //init the view model
+    //define the view model
     app.vm = {};
+    app.vm.updateFirebase = function () {
+        //TODO implement an update procedure
+        console.log('Update firebase called.');
+    };
+
+    //insert new firebase data into textbox by using mithrils rendering capabilities
+    //because we're calling stuff outside of Mithril (Firebase) we have to explicitely 
+    //call Mithril's start*-/EndComputation
+    app.vm.updateFirebaseMessage = function (data) {
+        m.startComputation();
+        app.vm.firebaseValue(data);
+        m.endComputation();
+        console.log('Updating Textbox with: ' + data);
+    };
+    //init model
     app.vm.init = function () {
         this.customers = new app.Customers();
         this.firebase = new app.Firebase();
-        fireAuth(this.firebase,'USER-EMAIL', 'PASSWORD');
-        //to retrieve JSON data directly from Firebase DB add '.json' to the URL like in the example below
+
+        //init Mithril-style property to get dynamic view updates
+        this.firebaseValue = m.prop('A default Firebase value');
+
+        //get the child path of current Firebase root (some sub-structure like "messages", "users" etc.)
+        this.messages = this.firebase.child('messages');
+
+        //register to child-added events of Firebase
+        this.messages.on("child_added", function (snapshot) {
+            console.log('Got new data from Firebase: ' + JSON.stringify(snapshot.val()));
+            app.vm.updateFirebaseMessage(snapshot.val().msg);
+        });
+
+        //wire up Firebase connection
+        fireAuth(this.firebase, 'USER_NAME', 'PASSWORD');
+
+        //to retrieve JSON data directly from Firebase add '.json' to the URL like in the example below
         //more info on filtering here: https://www.firebase.com/docs/web/guide/retrieving-data.html#section-queries
-        this.firebaseJsonUrl = app.FIREBASE_URL + '/.json?limitToFirst=10&orderBy=%22$key%22';
+        this.firebaseJsonUrl = FIREBASE_URL + '/messages.json?limitToFirst=10&orderBy=%22$key%22';
     };
 
 }(window, Mithril));
