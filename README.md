@@ -42,7 +42,7 @@ So, if you find any problematic parts, please let me know.
 **Firebase**
 
 The current Firebase integration shows a simple "three-way" data-binding between the view, the model and the database hosted at Firebase.com. If you change the value on Firebase, for example by sending a POST request
-via <a href="http://curl.haxx.se/" target="_blank">cURL</a>, a respective event "child_added" will be fired and the app will change the value of "Message from Firebase".
+via <a href="http://curl.haxx.se/" target="_blank">cURL</a>, a respective event "child_added" will be fired and the app will change the value in the textbox.
 
 Here's an example cURL call for Windows (usually, on Linux you don't have to fiddle around with "echo" because there are no problems
 with proper formatting of '' and ""):
