@@ -24,7 +24,7 @@ The app itself is a "no-brainer" and the most complex part actually is the confi
 Nevertheless, I tried to make this demo app somewhat "realistic" and added not only one grid-template but also a nested template for detail grid-views. 
 Using nested templates in Kendo UI is rather problematic because you can't simply select elements by their "ids". More info on this peculiarity <a href="http://blog.falafel.com/nested-templates-kendo-ui/" target="_blank">here</a>.
 
-This demo also supports retrieval of JSON-data from Firebase. But a valid Firebase account is needed which can be set up for free. 
+This demo also supports retrieval of JSON-data from Firebase. You have to create a (free) Firebase account to play around with it. 
 Look into *demo.model.js* for more information.
 
 Regarding the Mithril framework I can only say: **It's a great little tool!** The emphasis is on **great** :)
@@ -44,12 +44,9 @@ So, if you find any problematic parts, please let me know.
 The current Firebase integration shows a simple "three-way" data-binding between the view, the model and the database hosted at Firebase.com. If you change the value on Firebase, for example by sending a POST request
 via <a href="http://curl.haxx.se/" target="_blank">cURL</a>, a respective event "child_added" will be fired and the app will change the value in the textbox.
 
-Here's an example cURL call for Windows (usually, on Linux you don't have to fiddle around with "echo" because there are no problems
-with proper formatting of '' and ""):
-
 Here I'm sending a POST message to my Firebase-server to store it under the /messages-path.
 
-    echo {"id":"1","user":"Harris","msg":"Hello World!"} | curl https://YOUR_FIREBASE_SERVER_ADDRESS/messages.json -H 'Accept: application/json' -H 'Content-Type: application/json' -d @-
+    echo {"id":"1","user":"harris","msg":"Hello world!"} | curl https://torid-heat-7688.firebaseio.com/messages.json -H "Accept: application/json" -H "Content-Type: application/json" -d @-
 
 <img src="http://f20.imgup.net/firebase10c1.png"/>
 
