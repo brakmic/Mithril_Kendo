@@ -48,7 +48,9 @@ Here I'm sending a POST message to my Firebase-server to store it under the /mes
 
     echo {"id":"1","user":"harris","msg":"Hello world!"} | curl https://torid-heat-7688.firebaseio.com/messages.json -H "Accept: application/json" -H "Content-Type: application/json" -d @-
 
-<img src="http://f20.imgup.net/firebase10c1.png"/>
+You can also change an existing value or create a new entry in Firebase by using the buttons. 
+
+<img src="http://j78.imgup.net/firebase6850.png"/>
 
 
 More info on data handling, persisting and retrieval: <a href="https://www.firebase.com/docs/web/guide/setup.html">Firebase Guide</a>
