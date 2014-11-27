@@ -66,7 +66,7 @@
             });
 
             //wire up Firebase connection
-            app.fireAuth(vm.firebase, 'dummy@user.com', '12345');
+            app.fireAuth(vm.firebase, 'USER', 'PWD');
             
             //to retrieve JSON data directly from Firebase add '.json' to the URL like in the example below
             //more info on filtering here: https://www.firebase.com/docs/web/guide/retrieving-data.html#section-queries
