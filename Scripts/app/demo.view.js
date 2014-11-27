@@ -265,8 +265,8 @@
                               [m('label', { 'for': 'firebase-value', }, 'Message from Firebase'),
                                 m('input[type=text]', { id: 'firebase-value', 'class': 'firebase-value input-group', 'value': app.vm.firebaseValue(), 'onkeyup': m.withAttr('value', app.vm.updateMessage) }),
                                 m('div', { 'class': 'btn-toolbar' }, [
-                                    m('input[type=button]', { id: 'firebase-value-update', 'class': 'btn btn-success', 'value': 'Create', 'onclick': app.vm.createEntryInFirebase }),
-                                    m('input[type=button]', { id: 'firebase-value-create', 'class': 'btn btn-success', 'value': 'Update', 'onclick': app.vm.updateValueInFirebase })
+                                    m('input[type=button]', { id: 'firebase-value-create', 'class': 'btn btn-success', 'value': 'Create', 'onclick': app.vm.createEntryInFirebase }),
+                                    m('input[type=button]', { id: 'firebase-value-update', 'class': 'btn btn-success', 'value': 'Update', 'onclick': app.vm.updateValueInFirebase })
                                 ])
                                 
                   ])
