@@ -1,4 +1,5 @@
 ﻿(function (global, m) {
+    'use strict';
     var app = global.app = global.app || {};
     m.startComputation();
     //Start the Mithril app.

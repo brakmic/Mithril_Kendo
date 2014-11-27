@@ -436,6 +436,7 @@
     <Content Include="Global.asax" />
     <Content Include="Scripts\app\demo.app.js" />
     <Content Include="Scripts\app\demo.controller.js" />
+    <Content Include="Scripts\app\demo.env.js" />
     <Content Include="Scripts\app\demo.model.js" />
     <Content Include="Scripts\app\demo.view.js" />
     <Content Include="Scripts\bootstrap.js" />

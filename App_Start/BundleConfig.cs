@@ -26,6 +26,7 @@ namespace Mithril_Kendo_WebApp
                 "~/Scripts/firebase.js"));
             //demo app scripts
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
+                "~/Scripts/app/demo.env.js",
                 "~/Scripts/app/demo.controller.js",
                 "~/Scripts/app/demo.model.js",
                 "~/Scripts/app/demo.view.js",

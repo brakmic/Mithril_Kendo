@@ -256,15 +256,19 @@
     //Kendo Grid knows nothing about Mithril and vice-versa and therefore we need some 
     //extra functionality to process templates, detail vies etc.
     //More info regarding the property "config" here: http://lhorie.github.io/mithril/mithril.html#persisting-config-data
-    app.view = function () {
+    app.view = function (ctrl) {
         return m('div', [
                           m('div', { id: 'mithril-grid-demo', 'class': 'mithril-grid', config: initKendoGrid }),
                           m('div', {'class': 'row'}, [
                              m('div', { 'class': 'col-lg-12' },
                              m('div', { id: 'firebase-app', 'class': 'well' },
                               [m('label', { 'for': 'firebase-value', }, 'Message from Firebase'),
-                                m('input[type=text]', { id: 'firebase-value', 'class': 'firebase-value input-group', 'value': app.vm.firebaseValue(), 'onkeyup': m.withAttr('value', app.vm.updateFirebaseMessage) }),
-                                m('input[type=button]', { id: 'firebase-value-button', 'class': 'btn btn-success', 'value': 'Click', 'onclick': app.vm.updateFirebase})
+                                m('input[type=text]', { id: 'firebase-value', 'class': 'firebase-value input-group', 'value': app.vm.firebaseValue(), 'onkeyup': m.withAttr('value', app.vm.updateMessage) }),
+                                m('div', { 'class': 'btn-toolbar' }, [
+                                    m('input[type=button]', { id: 'firebase-value-update', 'class': 'btn btn-success', 'value': 'Create', 'onclick': app.vm.createEntryInFirebase }),
+                                    m('input[type=button]', { id: 'firebase-value-create', 'class': 'btn btn-success', 'value': 'Update', 'onclick': app.vm.updateValueInFirebase })
+                                ])
+                                
                   ])
               )]
             )
