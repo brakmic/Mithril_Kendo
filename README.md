@@ -46,7 +46,7 @@ via <a href="http://curl.haxx.se/" target="_blank">cURL</a>, a respective event 
 
 Here I'm sending a POST message to my Firebase-server to store it under the /messages-path.
 
-    echo {"id":"1","user":"harris","msg":"Hello world!"} | curl https://torid-heat-7688.firebaseio.com/messages.json -H "Accept: application/json" -H "Content-Type: application/json" -d @-
+    echo {"id":"1","user":"harris","msg":"Hello world!"} | curl https://FIREBASE-SERVER/messages.json -H "Accept: application/json" -H "Content-Type: application/json" -d @-
 
 You can also change an existing value or create a new entry in Firebase by using the buttons. 
 
