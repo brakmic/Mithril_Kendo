@@ -275,4 +275,4 @@
         ]);
     };
 
-}(window, Mithril));
+}(window, m));

@@ -1,7 +1,7 @@
 ﻿(function (global, m) {
     'use strict';
     var app = global.app = global.app || {};
-    app.FIREBASE_URL = 'YOUR_FIREBASE_URL',
+    app.FIREBASE_URL = 'YOUR_FIREBASE_SERVER_URL',
     //authenticate Firebase services
     app.fireAuth = function (fire, user, pwd) {
         fire.authWithPassword({
@@ -45,4 +45,4 @@
         return new Firebase(app.FIREBASE_URL);
     };
 
-}(window, Mithril));
+}(window, m));

@@ -66,7 +66,7 @@
             });
 
             //wire up Firebase connection
-            app.fireAuth(vm.firebase, 'USER', 'PWD');
+            app.fireAuth(vm.firebase, 'YOUR_USER_NAME', 'YOUR_PASSWORD');
             
             //to retrieve JSON data directly from Firebase add '.json' to the URL like in the example below
             //more info on filtering here: https://www.firebase.com/docs/web/guide/retrieving-data.html#section-queries
@@ -75,4 +75,4 @@
         return vm;
     };
 
-}(window, Mithril));
+}(window, m));

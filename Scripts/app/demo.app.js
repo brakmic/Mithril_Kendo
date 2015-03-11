@@ -10,4 +10,4 @@
     //The view uses the preprocessed data to fill the grid and wire up the events.
     m.module(document.getElementById('mithril-app'), { controller: app.controller, view: app.view });
     m.endComputation();
-}(window, Mithril));
+}(window, m));

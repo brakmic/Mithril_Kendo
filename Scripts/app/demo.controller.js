@@ -7,4 +7,4 @@
         app.vm.init();
     };
 
-}(window, Mithril));
+}(window, m));
